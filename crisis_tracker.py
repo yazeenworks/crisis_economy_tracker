@@ -11,18 +11,21 @@ import numpy as np
 import requests
 import json
 import os
-from bs4 import BeautifulSoup
-from nltk.sentiment.vader import SentimentIntensityAnalyzer
-import nltk
 import time
+import warnings
 from datetime import datetime
+from dataclasses import dataclass
+
+import nltk
+nltk.download('vader_lexicon')
+
 import plotly.graph_objects as go
 import plotly.express as px
-from dataclasses import dataclass
-import warnings
-warnings.filterwarnings('ignore')
+import requests
+from bs4 import BeautifulSoup
+from nltk.sentiment.vader import SentimentIntensityAnalyzer
 
-nltk.download('vader_lexicon', quiet=True)
+warnings.filterwarnings('ignore')
 
 # ============================================================
 # LOCAL DATA FILE
