@@ -5,3 +5,4 @@ plotly
 beautifulsoup4
 requests
 nltk
+lxml
